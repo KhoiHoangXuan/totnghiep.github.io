@@ -3,36 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Test</title>
+    <title>Thư Mời Lễ Tốt Nghiệp - Hoàng Xuân Khôi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Chào mừng! 👋</h1>
-        <p class="subtitle">Đây là trang web test của bạn</p>
-        
-        <div class="card">
-            <h3>🎨 Thiết kế</h3>
-            <p>Trang web này có thiết kế đơn giản, hiện đại với gradient màu tím đẹp mắt và hiệu ứng hover mượt mà.</p>
+    <div class="invitation-container">
+        <!-- Background Images Layer -->
+        <div class="background-collage">
+            <div class="bg-image bg-image-1">
+                <img src="hcmus/1.jpg" alt="HCMUS Building">
+            </div>
+            <div class="bg-image bg-image-2">
+                <img src="hcmus/2.jpg" alt="HCMUS Campus">
+            </div>
+            <div class="bg-logo bg-logo-1">
+                <img src="hcmus/logo.png" alt="HCMUS Logo">
+            </div>
+            <div class="bg-logo bg-logo-2">
+                <img src="hcmus/fit_logo.png" alt="FIT Logo">
+            </div>
+            
+            <!-- Decorative Elements -->
+            <div class="bg-decor decor-cap">🎓</div>
+            <div class="bg-decor decor-star-1">⭐</div>
+            <div class="bg-decor decor-star-2">✨</div>
+            <div class="bg-decor decor-camera">📷</div>
+            <div class="bg-decor decor-confetti-1">🎊</div>
+            <div class="bg-decor decor-confetti-2">🎉</div>
+            
+            <!-- Overlay để làm mờ background -->
+            <div class="bg-overlay"></div>
         </div>
-        
-        <div class="card">
-            <h3>📱 Responsive</h3>
-            <p>Giao diện tự động điều chỉnh cho mọi kích thước màn hình từ mobile đến desktop.</p>
-        </div>
-        
-        <div class="card">
-            <h3>✨ Tính năng</h3>
-            <p>Các card có hiệu ứng hover, button với gradient và shadow đẹp mắt.</p>
-        </div>
-        
-        <center>
-            <button class="button" onclick="alert('Button đã hoạt động!')">Nhấn để test</button>
-        </center>
-        
-        <div class="footer">
-            Made with ❤️ for testing
-        </div>
+
+        <!-- Main Content Layer -->
+        <main class="main-content">
+            <!-- Graduation Badge -->
+            <div class="graduation-badge">
+                <span class="badge-text">🎓 GRADUATION</span>
+                <span class="badge-year">2025</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="invitation-title">
+                <span class="title-line-1">Thư Mời</span>
+                <span class="title-line-2">Invitation</span>
+            </h1>
+
+            <!-- Invitation Card -->
+            <div class="invitation-card">
+                <div class="card-decoration top-left"></div>
+                <div class="card-decoration top-right"></div>
+                <div class="card-decoration bottom-left"></div>
+                <div class="card-decoration bottom-right"></div>
+
+                <p class="invite-text">Thân mời tham dự</p>
+                
+                <div class="event-title">
+                    <h2>Lễ Tốt Nghiệp Cử Nhân</h2>
+                    <h3>Công Nghệ Thông Tin</h3>
+                </div>
+
+                <div class="graduate-name">
+                    <span class="name-decoration left">❧</span>
+                    <h1>Hoàng Xuân Khôi</h1>
+                    <span class="name-decoration right">❧</span>
+                </div>
+
+                <div class="university-info">
+                    <div class="uni-logo-small">
+                        <img src="hcmus/logo.png" alt="HCMUS">
+                    </div>
+                    <div class="uni-details">
+                        <p class="uni-name">Trường Đại học Khoa học Tự nhiên - ĐHQG HCM</p>
+                        <p class="uni-address">227 Nguyễn Văn Cừ, Phường Chợ Quán, TP. Hồ Chí Minh</p>
+                        <a href="https://maps.app.goo.gl/B6varcVuLihNHDoC8" target="_blank" class="map-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Xem bản đồ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date Time Section -->
+            <div class="datetime-section">
+                <div class="datetime-card">
+                    <div class="day-name">Thứ Bảy</div>
+                    <div class="date-box">
+                        <span class="date-number">20</span>
+                        <span class="date-divider">|</span>
+                        <span class="date-month">12</span>
+                    </div>
+                    <div class="year">2025</div>
+                    <div class="time-box">
+                        <!-- <span class="time-label">Lúc</span> -->
+                        <span class="time">11:00</span>
+                        <span class="time-period">AM</span>
+                    </div>                    
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h4>Liên hệ</h4>
+                <div class="contact-items">
+                    <a href="tel:0814385614" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span>0814385614</span>
+                    </a>
+                    <span class="contact-divider">|</span>
+                    <a href="https://www.facebook.com/khoi.hoangxuan.96" target="_blank" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        <span>Khôi Hoàng Xuân</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Parking Info Section -->
+            <div class="parking-section">
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="car-icon">
+                        <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                    </svg>
+                    <h4>Hướng dẫn gửi xe</h4>
+                </div>
+                <p class="parking-note">
+                    Mọi người có thể gửi xe tại 
+                    <a href="https://maps.app.goo.gl/C1fsggcWexiXVzwt7" target="_blank" class="highlight-link">Nowzone</a> 
+                    rồi đi bộ qua trường
+                </p>
+                <div class="map-image">
+                    <img src="map/nowzone.jpg" alt="Bản đồ Nowzone đến HCMUS">
+                    <a href="https://maps.app.goo.gl/C1fsggcWexiXVzwt7" target="_blank" class="map-overlay">
+                        <span>Xem Google Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Campus Map Section -->
+            <div class="campus-section">
+                <div class="section-header">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="map-icon">
+                        <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+                    </svg>
+                    <h4>Sơ đồ HCMUS</h4>
+                </div>
+                <div class="campus-map">
+                    <img src="map/truong.jpg" alt="Sơ đồ trường HCMUS">
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-decoration">
+                    <span>❧</span>
+                    <span>❧</span>
+                    <span>❧</span>
+                </div>
+                <p class="footer-text">Rất vui được đón tiếp Anh Chị và Các Bạn!</p>
+                <div class="footer-logos">
+                    <img src="hcmus/logo.png" alt="HCMUS">
+                    <img src="hcmus/fit_logo.png" alt="FIT">
+                </div>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
