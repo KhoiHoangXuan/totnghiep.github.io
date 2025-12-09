@@ -403,11 +403,20 @@ body {
 
 .university-info {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 15px; */
     padding: 20px;
     background: linear-gradient(135deg, rgba(0, 75, 135, 0.05) 0%, rgba(0, 75, 135, 0.1) 100%);
     border-radius: 15px;
+    text-align: center;
+}
+
+.uni-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
     text-align: left;
 }
 
@@ -448,6 +457,7 @@ body {
 .map-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     color: var(--white);
     text-decoration: none;
@@ -485,6 +495,9 @@ body {
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .datetime-card::before {
@@ -506,11 +519,11 @@ body {
     margin-bottom: 10px;
 }
 
-.date-box {
-    display: flex;
+.date-wrapper {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin-bottom: 5px;
 }
 
@@ -581,6 +594,9 @@ body {
     color: var(--text-light);
     margin-top: 5px;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    padding-left: 15px;
 }
 
 /* ===== Contact Section ===== */
@@ -596,12 +612,12 @@ body {
 }
 
 .contact-section h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
     font-weight: 600;
     color: var(--primary-blue);
     margin-bottom: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -616,6 +632,7 @@ body {
 .contact-item {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     color: var(--text-dark);
     text-decoration: none;
@@ -626,6 +643,7 @@ body {
     border-radius: 30px;
     transition: all 0.3s ease;
     border: 1px solid rgba(0, 75, 135, 0.15);
+    min-width: 180px;
 }
 
 .contact-item:hover {
@@ -758,10 +776,49 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+.campus-map-link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
 .campus-map img {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.campus-map-link:hover img {
+    transform: scale(1.02);
+}
+
+.zoom-hint {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 75, 135, 0.85);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.zoom-hint svg {
+    width: 14px;
+    height: 14px;
+}
+
+.campus-map-link:hover .zoom-hint {
+    opacity: 1;
+    background: var(--primary-blue);
 }
 
 /* ===== Footer ===== */

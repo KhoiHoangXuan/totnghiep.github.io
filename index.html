@@ -73,19 +73,21 @@
                 </div>
 
                 <div class="university-info">
-                    <div class="uni-logo-small">
-                        <img src="hcmus/logo.png" alt="HCMUS">
+                    <div class="uni-row">
+                        <div class="uni-logo-small">
+                            <img src="hcmus/logo.png" alt="HCMUS">
+                        </div>
+                        <div class="uni-details">
+                            <p class="uni-name">Trường Đại học Khoa học tự nhiên, ĐHQG-HCM</p>
+                            <p class="uni-address">227 Nguyễn Văn Cừ, Phường Chợ Quán, TP. Hồ Chí Minh</p>
+                        </div>
                     </div>
-                    <div class="uni-details">
-                        <p class="uni-name">Trường Đại học Khoa học Tự nhiên - ĐHQG HCM</p>
-                        <p class="uni-address">227 Nguyễn Văn Cừ, Phường Chợ Quán, TP. Hồ Chí Minh</p>
-                        <a href="https://maps.app.goo.gl/B6varcVuLihNHDoC8" target="_blank" class="map-btn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                            <span>Xem bản đồ</span>
-                        </a>
-                    </div>
+                    <a href="https://maps.app.goo.gl/B6varcVuLihNHDoC8" target="_blank" class="map-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span>Xem bản đồ</span>
+                    </a>
                 </div>
             </div>
 
@@ -93,7 +95,7 @@
             <div class="datetime-section">
                 <div class="datetime-card">
                     <div class="day-name">Thứ Bảy</div>
-                    <div class="date-box">
+                    <div class="date-wrapper">
                         <span class="date-number">20</span>
                         <span class="date-divider">|</span>
                         <span class="date-month">12</span>
@@ -117,7 +119,7 @@
                         </svg>
                         <span>0814385614</span>
                     </a>
-                    <span class="contact-divider">|</span>
+                    <!-- <span class="contact-divider">|</span> -->
                     <a href="https://www.facebook.com/khoi.hoangxuan.96" target="_blank" class="contact-item">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -143,7 +145,7 @@
                 <div class="map-image">
                     <img src="map/nowzone.jpg" alt="Bản đồ Nowzone đến HCMUS">
                     <a href="https://maps.app.goo.gl/C1fsggcWexiXVzwt7" target="_blank" class="map-overlay">
-                        <span>Xem Google Maps</span>
+                        <span>Xem bản đồ tới Nowzone</span>
                     </a>
                 </div>
             </div>
@@ -157,7 +159,16 @@
                     <h4>Sơ đồ HCMUS</h4>
                 </div>
                 <div class="campus-map">
-                    <img src="map/truong.jpg" alt="Sơ đồ trường HCMUS">
+                    <a href="map/truong.jpg" target="_blank" class="campus-map-link">
+                        <img src="map/truong.jpg" alt="Sơ đồ trường HCMUS">
+                        <div class="zoom-hint">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                            <!-- <span>Nhấn để xem lớn</span> -->
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -168,7 +179,7 @@
                     <span>❧</span>
                     <span>❧</span>
                 </div>
-                <p class="footer-text">Rất vui được đón tiếp Anh Chị và Các Bạn!</p>
+                <p class="footer-text">Rất vui được đón tiếp mọi người!</p>
                 <div class="footer-logos">
                     <img src="hcmus/logo.png" alt="HCMUS">
                     <img src="hcmus/fit_logo.png" alt="FIT">
